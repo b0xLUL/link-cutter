@@ -1,0 +1,30 @@
+/*root elements based on theme preference*/
+@media (prefers-color-scheme: light) {
+    :root {
+        --text: #16090a;
+        --background: #fbf4f4;
+        --primary: #5e2b30;
+        --secondary: #dd7881;
+        --accent: #46914e;
+
+    }
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text: #f6e9ea;
+        --background: #0a0404;
+        --primary: #d4a2a6;
+        --secondary: #86212a;
+        --accent: #6fb978;
+    }
+}
+
+:root {
+    --linearPrimarySecondary: linear-gradient(#d4a1a6, #87222a);
+    --linearPrimaryAccent: linear-gradient(#d4a1a6, #6eb976);
+    --linearSecondaryAccent: linear-gradient(#87222a, #6eb976);
+    --radialPrimarySecondary: radial-gradient(#d4a1a6, #87222a);
+    --radialPrimaryAccent: radial-gradient(#d4a1a6, #6eb976);
+    --radialSecondaryAccent: radial-gradient(#87222a, #6eb976);
+
+}
