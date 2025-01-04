@@ -1,3 +1,42 @@
+/*margin + padding order: top right bottom left*/
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    grid-template-rows: 2fr 5fr 1fr;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    background: #FF0000;
+    grid-area: header;
+}
+
+header .title {
+    color: var(--text);
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    background: #00FF00;
+    grid-area: main;
+}
+
+footer {
+    background: #0000FF;
+    grid-area: footer;
+}
+
 /*root elements based on theme preference*/
 @media (prefers-color-scheme: light) {
     :root {
