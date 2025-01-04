@@ -57,12 +57,12 @@ main {
 }
 
 main > .input-section {
-    background: var(--background-200);
+    background: var(--primary-400);
     color: var(--text);
     grid-area: input;
 }
 
-main > .input-section > .input {
+main > .input-section > input {
     color: var(--text);
 
 }
